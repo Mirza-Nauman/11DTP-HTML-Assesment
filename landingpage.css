@@ -61,11 +61,12 @@ nav a {
 }
    
 .hero-logo {
-  width: 100px;
+  width: 20vw;
+  max-width: 120px;
 }
    
 .hero h1 {
-  font-size: 60px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 300;
 }
 
