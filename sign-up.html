@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarSoccer Central | Sign Up</title>
+  <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+<header>
+  <div class="logo">CarSoccer Central</div>
+  <nav>
+    <a href="landingpage.html">Home Page</a>
+    <a href="MechanicalStrategic Guide.html">Mechanical/Strategic Guide</a>
+    <a href="General TipsPointers.html">General Tips/Pointers</a>
+  </nav>
+  <div class="auth">
+    <a href="login.html">
+      <button class="login">Login</button>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="signup-container">
+    <form id="signupForm" novalidate>
+      <label for="login">Enter a Login:</label>
+      <input type="text" id="login" name="login" required aria-required="true">
+
+      <label for="password">Enter a Password:</label>
+      <input type="password" id="password" name="password" required aria-required="true" minlength="6">
+
+      <label for="relogin">Re-enter Login:</label>
+      <input type="text" id="relogin" name="relogin" required aria-required="true">
+
+      <label for="repassword">Re-enter Password:</label>
+      <input type="password" id="repassword" name="repassword" required aria-required="true" minlength="6">
+
+      <div class="checkboxes">
+        <label><input type="checkbox" name="buyer"> I agree to the terms and conditions</label><br>
+        <label><input type="checkbox" name="seller">Accept marketing to your inbox?</label><br>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+      <button type="button" class="account-btn">I have an account</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-nav">
+    <h4>Navigation</h4>
+    <ul>
+      <li><a href="#">Navi</a></li>
+      <li><a href="#">Links</a></li>
+    </ul>
+  </div>
+  <div class="footer-social">
+    <h4>Social</h4>
+      <a href="#" aria-label="Facebook">📘</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+      <a href="#" aria-label="YouTube">▶️</a>
+    </div>
+  <div class="footer-contact">
+    <h4>Contact</h4>
+    <a href="mailto:info@example.com">info@example.com</a>
+  </div>
+</footer>
+
+<div class="footer-bottom">2025 CarSoccer Central</div>
+
+<script>
+  document.getElementById('signupForm').addEventListener('submit', function(e) {
+    const login = document.getElementById('login').value.trim();
+    const relogin = document.getElementById('relogin').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const repassword = document.getElementById('repassword').value.trim();
+
+    if (!login || !relogin || !password || !repassword) {
+      e.preventDefault();
+      alert("All fields are required.");
+    } else if (login !== relogin) {
+      e.preventDefault();
+      alert("Login fields do not match.");
+    } else if (password !== repassword) {
+      e.preventDefault();
+      alert("Passwords do not match.");
+    }
+  });
+</script>
+</body>
+</html>

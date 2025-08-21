@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #FFFCF2;
+  color: #252422;
+}
+
+header {
+  background: #EB5E28;
+  color: #FFFCF2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+header .logo {
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #FFFCF2;
+}
+
+.auth button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login {
+  background: #FFFCF2;
+  color: #252422;
+}
+
+.signup {
+  background: #FFFCF2;
+  color: #252422;
+}
+
+.line {
+  border: none;
+  border-top: 3px solid #252422;
+  margin: 0;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills .card {
+  width: 20%;
+  border: 2px solid #252422;
+  padding: 10px;
+  background: #FFFCF2;
+}
+
+.skills img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.beginner {
+  background: #252422;
+  color: #FFFCF2;
+}
+
+.intermediate {
+  background: #252422;
+  color: #FFFCF2;
+}
+
+.advanced {
+  background: #252422;
+  color: #FFFCF2;
+}
+
+.strategies {
+  background: #EB5E28;
+  color: #FFFCF2;
+  padding: 1px 20px;
+}
+
+.strategies h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.strategy {
+  background: #FFFCF2;
+  color: #252422;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #252422;
+}
+
+.strategy img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-left: 15px;
+}
+
+footer {
+  background-color: #EB5E28;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  color: #FFFCF2;
+}
+
+footer h4 {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #FFFCF2;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  background-color: #FFFCF2
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+  background: #FFFCF2;
+  color: #EB5E28;
+  border-top: 3px solid #252422;
+}
