@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarSoccer Central | Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<header>
+  <div class="logo">CarSoccer Central</div>
+    <nav>
+      <a href="landingpage.html">Home Page</a>
+      <a href="MechanicalStrategic Guide.html">Mechanical/Strategic Guide</a>
+      <a href="General TipsPointers.html">General Tips/Pointers</a>
+    </nav>
+    <div class="auth">
+      <a href="sign-up.html">
+          <button class="signup">Sign Up</button>
+      </a>
+        </div>
+</header>
+
+<main>
+  <section class="login-container">
+      <img src="rocketleaguelogo.png" alt="Rocket League Logo" class="logo-box">
+
+      <form id="loginForm" novalidate>
+      <label for="username">Subject:</label>
+      <input type="text" id="username" name="username" required aria-required="true" aria-label="Login">
+
+      <label for="password">Message:</label>
+      <input type="password" id="password" name="password" required aria-required="true" aria-label="Password">
+
+        <button type="submit" class="login-submit">Submit</button>
+      <p class="or-text">Or</p>
+      
+      <a href="sign-up.html">
+        <button type="button" class="signup-submit">Write a detailed inquiry</button>
+      </a>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-nav">
+    <h4>Navigation</h4>
+    <ul>
+      <li><a href="landingpage.html">Home Page</a></li>
+      <li><a href="General TipsPointers.html">General Tips/Pointers</a></li>
+      <li><a href="MechanicalStrategic Guide">Mechanical/Strategic Guide</a></li>
+    </ul>
+  </div>
+  <div class="footer-social">
+    <h4>Social</h4>
+    <a href="https://facebook.com/" aria-label="Facebook">📘</a>
+    <a href="https://x.com/" aria-label="Twitter">🐦</a>
+    <a href="https://youtube.com/" aria-label="YouTube">▶️</a>
+  </div>
+  <div class="footer-contact">
+    <h4>Contact</h4>
+    <a href="mailto:mn23207@my.westlake.school.nz">mn23207@my.westlake.school.nz</a>
+  </div>
+</footer>
+
+<div class="footer-bottom">2025 CarSoccer Central</div>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+
+    if (!username.value.trim() || !password.value.trim()) {
+      e.preventDefault();
+      alert("Both fields are required.");
+    }
+  });
+</script>
+</body>
+</html>
