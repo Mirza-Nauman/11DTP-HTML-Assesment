@@ -80,7 +80,6 @@ nav a {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #007BFF;
   color: white;
   border: none;
   border-radius: 5px;
@@ -88,49 +87,47 @@ nav a {
 }
 
 .hero-text button:hover {
-  background-color: #0056b3;
+  background-color: #FFFCF2;
 }
 
-@media (max-width: 768px) {
-  .about {
-    display: flex;
-    background-color: #EB5E28;
-    padding: 20px;
-    color: #FFFCF2;
-  }
+.about {
+  display: flex;
+  background-color: #EB5E28;
+  padding: 20px;
+  color: #FFFCF2;
+}
     
-  .about-box {
-    background-color: #FFFCF2;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.about-box {
+  background-color: #FFFCF2;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
     
-  .about-box img {
-    max-width: 80%;
-    max-height: 80%;
-  }
+.about-box img {
+  max-width: 80%;
+  max-height: 80%;
+}
     
-  .about-text h2 {
-    color: #252422;
-    font-size: 36px;
-  }
+.about-text h2 {
+  color: #252422;
+  font-size: 36px;
+}
     
-  .about-text p {
-    font-size: 18px;
-  }
+.about-text p {
+  font-size: 18px;
+}
     
-  .footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #EB5E28;
-    color: #FFFCF2;
-    padding: 20px;
-  }
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #EB5E28;
+  color: #FFFCF2;
+  padding: 20px;
 }
    
 .footer h3 {
