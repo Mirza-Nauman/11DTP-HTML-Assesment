@@ -138,6 +138,11 @@ body {
   margin: 5px 0;
 }
 
+.col a {
+  text-decoration: none;
+  color: #FFFCF2
+}
+
 .social-icons {
   display: flex;
   gap: 10px;
