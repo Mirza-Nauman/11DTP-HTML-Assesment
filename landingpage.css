@@ -75,9 +75,7 @@ nav a {
   background-image: url('rocketleaguehero.png'); 
   background-size: cover;
   background-position: center;
-  height: 100vh; 
-  color: white;
-  text-align: center;
+  color: #FFFCF2;
 }
 
 
