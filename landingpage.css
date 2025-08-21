@@ -17,7 +17,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  flex-wrap: wrap;
 }
 
 header .logo {
@@ -28,8 +27,6 @@ nav a {
   margin: 0 10px;
   text-decoration: none;
   color: #FFFCF2;
-  display: inline-block;
-  margin: 5px 8px;
 }
 
 .auth button {
@@ -38,7 +35,6 @@ nav a {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 0.9rem;
 }
 
 .login {
