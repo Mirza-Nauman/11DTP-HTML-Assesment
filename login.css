@@ -126,7 +126,6 @@ footer {
   justify-content: space-around;
   padding: 1rem;
   color: #FFFCF2;
-  text-decoration: none;
 }
 
 footer h4 {
@@ -141,6 +140,14 @@ footer a {
 footer a:hover,
 footer a:focus {
   text-decoration: underline;
+}
+
+.footer-nav a {
+  text-decoration: none;
+}
+
+.footer-social a {
+  text-decoration: none;
 }
 
 .footer-bottom {
