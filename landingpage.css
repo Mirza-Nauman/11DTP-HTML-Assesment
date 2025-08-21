@@ -142,8 +142,9 @@ nav a {
   margin: 0;
 }
 
-.footer-col li a {
+.footer-col a {
   text-decoration: none;
+  color: #FFFCF2;
 }
    
 .social-icons .icon {
