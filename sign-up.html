@@ -24,16 +24,16 @@
 <main>
   <section class="signup-container">
     <form id="signupForm" novalidate>
-      <label for="login">Enter a Login:</label>
+      <label for="login">Name:</label>
       <input type="text" id="login" name="login" required aria-required="true">
 
-      <label for="password">Enter a Password:</label>
+      <label for="password">Email:</label>
       <input type="password" id="password" name="password" required aria-required="true" minlength="6">
 
-      <label for="relogin">Re-enter Login:</label>
+      <label for="relogin">Subject:</label>
       <input type="text" id="relogin" name="relogin" required aria-required="true">
 
-      <label for="repassword">Re-enter Password:</label>
+      <label for="repassword">Message:</label>
       <input type="password" id="repassword" name="repassword" required aria-required="true" minlength="6">
 
       <div class="checkboxes">
@@ -80,12 +80,6 @@
     if (!login || !relogin || !password || !repassword) {
       e.preventDefault();
       alert("All fields are required.");
-    } else if (login !== relogin) {
-      e.preventDefault();
-      alert("Login fields do not match.");
-    } else if (password !== repassword) {
-      e.preventDefault();
-      alert("Passwords do not match.");
     }
   });
 </script>
