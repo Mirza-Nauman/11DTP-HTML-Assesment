@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarSoccer Central | Sign Up</title>
+  <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+<header>
+  <div class="logo">CarSoccer Central</div>
+  <nav>
+    <a href="landingpage.html">Home Page</a>
+    <a href="MechanicalStrategic Guide.html">Mechanical/Strategic Guide</a>
+    <a href="General TipsPointers.html">General Tips/Pointers</a>
+  </nav>
+  <div class="auth">
+    <a href="login.html">
+      <button class="login">Login</button>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="signup-container">
+    <form id="signupForm" novalidate>
+      <label for="login">Name:</label>
+      <input type="text" id="login" name="login" required aria-required="true">
+
+      <label for="password">Email:</label>
+      <input type="password" id="password" name="password" required aria-required="true" minlength="6">
+
+      <label for="relogin">Subject:</label>
+      <input type="text" id="relogin" name="relogin" required aria-required="true">
+
+      <label for="repassword">Message:</label>
+      <input type="password" id="repassword" name="repassword" required aria-required="true" minlength="6">
+
+      <div class="checkboxes">
+        <label><input type="checkbox" name="buyer"> I agree to the terms and conditions</label><br>
+        <label><input type="checkbox" name="seller">Accept marketing to your inbox?</label><br>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+
+      <a href="login.html">
+        <button type="button" class="account-btn">Write a simple inquiry</button>
+      </a>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-nav">
+    <h4>Navigation</h4>
+    <ul>
+      <li><a href="landingpage.html">Home Page</a></li>
+      <li><a href="General TipsPointers.html">General Tips/Pointers</a></li>
+      <li><a href="MechanicalStrategic Guide">Mechanical/Strategic Guide</a></li>
+    </ul>
+  </div>
+  <div class="footer-social">
+    <h4>Social</h4>
+      <a href="https://facebook.com/" aria-label="Facebook">📘</a>
+      <a href="https://x.com/" aria-label="Twitter">🐦</a>
+      <a href="https://youtube.com/" aria-label="YouTube">▶️</a>
+    </div>
+  <div class="footer-contact">
+    <h4>Contact</h4>
+    <a href="mailto:mn23207@my.westlake.school.nz">mn23207@my.westlake.school.nz</a>
+  </div>
+</footer>
+
+<div class="footer-bottom">2025 CarSoccer Central</div>
+
+<script>
+  document.getElementById('signupForm').addEventListener('submit', function(e) {
+    const login = document.getElementById('login').value.trim();
+    const relogin = document.getElementById('relogin').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const repassword = document.getElementById('repassword').value.trim();
+
+    if (!login || !relogin || !password || !repassword) {
+      e.preventDefault();
+      alert("All fields are required.");
+    }
+  });
+</script>
+</body>
+</html>
