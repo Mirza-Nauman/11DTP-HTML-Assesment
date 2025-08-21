@@ -69,7 +69,6 @@ nav a {
   font-weight: 300;
 }
 
-
 .hero {
   position: relative;
   background-image: url('rocketleaguehero.png'); 
@@ -77,7 +76,6 @@ nav a {
   background-position: center;
   color: #FFFCF2;
 }
-
 
 .hero-text button {
   margin-top: 20px;
