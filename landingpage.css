@@ -46,7 +46,8 @@ nav a {
   background: #FFFCF2;
   color: #252422;
 }
-   
+
+
 .hero {
   text-align: center;
   padding: 30px 0;
@@ -66,6 +67,33 @@ nav a {
 .hero h1 {
   font-size: 60px;
   font-weight: 300;
+}
+
+
+.hero {
+  position: relative;
+  background-image: url('rocketleaguehero.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  color: white;
+  text-align: center;
+}
+
+
+.hero-text button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #0056b3;
 }
    
 .about {
